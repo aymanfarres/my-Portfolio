@@ -1,20 +1,33 @@
 .paragraph {
     font-size: 2rem; /* Use vw for responsive font size */
-    
-    color: white; /* Full width of the viewport */
-    display: flex;
+    color: white; /* Text color */
+    display: flex; /* Flexbox for layout */
     flex-wrap: wrap; /* Allow words to wrap to the next line */
-    margin-left: 20px;
-    margin-top: 5rem;
-    text-align: center;
+    margin-left: 20px; /* Left margin */
+    margin-top: 5rem; /* Top margin */
+    text-align: center; /* Center text alignment */
+    width: 100%; /* Ensure it takes full width */
 }
 
 .word {
-    margin-right: 12px; /* Space between words */
-    position: relative;
+    margin-right: 10px; /* Space between words */
+    position: relative; /* Position for shadow effect */
 }
-.shadow{
-    position:absolute;
-    opacity:0.1;
-    
+
+/* Shadow style for characters */
+.shadow {
+    position: absolute; /* Position relative to the word */
+    opacity: 0.1; /* Light opacity for shadow effect */
+    left: 0; /* Align shadow to the left */
+    top: 0; /* Align shadow to the top */
+    pointer-events: none; /* Ensure shadow doesn't interfere with clicks */
+}
+
+// Responsive font size for smaller screens
+@media (max-width: 640px) {
+    .paragraph {
+        font-size: 5vw; /* Adjust font size based on viewport width */
+        margin-left: 10px; /* Reduce left margin on smaller screens */
+        margin-top: 3rem; /* Reduce top margin on smaller screens */
+    }
 }

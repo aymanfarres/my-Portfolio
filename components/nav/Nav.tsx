@@ -30,9 +30,10 @@ const Nav = () => {
         },
       }}
       transition={{ duration: 0.2 }}
-      className='w-full *:cursor-pointer z-10 md:top-0 fixed sm:-top-0 flex justify-center pt-4'
+      
+      className='w-full *:cursor-pointer z-10 fixed top-0 flex justify-center pt-4'
     >
-      <div className='relative flex backdrop-blur-sm text-white sm:gap-8 gap-4 p-3 border-2 rounded-3xl items-center justify-center  border-gray-200'>
+      <div className='relative flex   backdrop-blur-sm text-white sm:gap-8 gap-2 p-3 border-2 rounded-3xl items-center justify-center sm:w-[30rem] w-full border-gray-200'>
         <Link className="hover:scale-110 transition-transform hover:font-bold" to="home" smooth={true} duration={500} onClick={() => setIsHidden(false)}>Home</Link>
         <Link className="hover:scale-110 transition-transform hover:font-bold" to="about" smooth={true} duration={500} onClick={() => setIsHidden(false)}>About</Link>
         <Link className="hover:scale-110 transition-transform hover:font-bold" to="projects" smooth={true} duration={500} onClick={() => setIsHidden(false)}>Projects</Link>
@@ -41,6 +42,7 @@ const Nav = () => {
         <Link className="hover:scale-110 transition-transform hover:font-bold" to="contact" smooth={true} duration={500} onClick={() => setIsHidden(false)}>Contact</Link>
       </div>
     </motion.div>
+    
   );
 }
 
