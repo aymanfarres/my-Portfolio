@@ -35,7 +35,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="aymanefarres6@gmail.com"
+            href="mailto:aymanefarres6@gmail.com"
             className="text-gray-400 hover:scale-95 hover:text-white transition-colors duration-200"
             aria-label="Gmail"
           >

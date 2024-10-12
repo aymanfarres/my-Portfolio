@@ -50,7 +50,7 @@ const Projects: React.FC<ProjectsProps> = ({ setActiveMenu }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <h1 className='font-bold text-3xl hover:text-white'>Visite-website</h1>
+                      <h1 className='font-bold text-3xl hover:text-white'>Visit-website: live preview</h1>
                       
                     </a>
                   </Link>
