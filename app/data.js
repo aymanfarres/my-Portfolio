@@ -35,7 +35,7 @@ export const images= [
   {img: "/images/php.png"},
   
   {img: "/images/mysql.png"},
-  {img: "/images/typeScript.png"},
+  {img: "/images/ts.png"},
   {img: "/images/prisma.png"},
 
  
