@@ -12,6 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        "header": ["Sofadi One", "system-ui"],
+        "name":["Caveat", "cursive"],
+        "par":["Gowun Batang", "serif"],
+        "lobster":["Lobster", "sans-serif"],
+        "arvo":["Arvo", "serif"]
+      }
     },
   },
   plugins: [],
