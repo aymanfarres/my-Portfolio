@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from 'react';
 import { projects } from '../../app/data';
+import Link from 'next/link';
 
 type Project = {
   img: string;
   head: string;
   text: string;
+  href: string;
 };
 
 type ProjectsProps = {
@@ -37,9 +39,22 @@ const Projects: React.FC<ProjectsProps> = ({ setActiveMenu }) => {
                 {activeIndex === i ? '-' : '+'}
               </span>
             </button>
-            <div className={` grid md:mt-10 text-xl overflow-hidden transition-all duration-300 ease-in-out 
+            <div className={`grid md:mt-10 text-xl overflow-hidden transition-all duration-300 ease-in-out 
               ${activeIndex === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
               <div className='overflow-hidden bg-black md:leading-[2.5rem] '>
+                <div >
+                  
+                  <Link href={project.href} legacyBehavior>
+                    <a
+                      className='font-bold text-blue-600 font-name'
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h1 className='font-bold text-3xl hover:text-white'>Visite-website</h1>
+                      
+                    </a>
+                  </Link>
+                </div>                
                 {project.text}
               </div>
             </div>
